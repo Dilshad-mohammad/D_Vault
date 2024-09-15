@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax_flutter/iconsax_flutter.dart';
 import 'package:untitled/features/authentication/screens/Signup/verify_email.dart';
 import 'package:untitled/features/authentication/screens/Signup/widgets/terms_condition_cbox.dart';
 
-import '../../../../../utils/constants/helpers/colors.dart';
 import '../../../../../utils/constants/helpers/sizes.dart';
 import '../../../../../utils/constants/helpers/text_strings.dart';
 import '../../../../../utils/helpers/helper_function.dart';

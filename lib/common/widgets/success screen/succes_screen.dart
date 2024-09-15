@@ -20,7 +20,7 @@ class SuccessScreen extends StatelessWidget {
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(
-          padding: DSpacingStyle.paddindWithAppBarHeight * 2,
+          padding: DSpacingStyle.paddingWithAppBarHeight * 2,
           child: Column(
             children: [
               /// Image

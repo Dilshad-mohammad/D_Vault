@@ -42,9 +42,10 @@ class DImages {
   static const String electronicsIcon = "assets/icons/categories/icons8-smartphone-64.png";
 
 //--Banners
-  static const String promoBanner1 = "assets/images/products/promo-banner-1.png";
-  static const String promoBanner2 = "assets/images/products/promo-banner-2.png";
-  static const String promoBanner3 = "assets/images/products/promo-banner-3.png";
+  static const String promoBanner1 = "assets/images/banners/promo-banner-1.png";
+  static const String promoBanner2 = "assets/images/banners/promo-banner-2.png";
+  static const String promoBanner3 = "assets/images/banners/promo-banner-3.png";
+  static const String promoBanner4 = "assets/images/banners/promo_banner_4.jpg";
 
 // -- Product Reviews
   static const String userProfileImage1 = 'assets/images/reviews/review_profile_image_1.jpg';

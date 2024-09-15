@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../../../utils/constants/helpers/colors.dart';
 
 class DCircularContainer extends StatelessWidget {
@@ -9,6 +8,7 @@ class DCircularContainer extends StatelessWidget {
     this.height = 400,
     this.radius = 400,
     this.padding = 0,
+    this.margin,
     this.child,
     this.backgroundColor = DColors.white,
   });
@@ -16,6 +16,7 @@ class DCircularContainer extends StatelessWidget {
   final double? width;
   final double? height;
   final double radius;
+  final EdgeInsets? margin;
   final double padding;
   final Widget? child;
   final Color backgroundColor;
@@ -24,6 +25,7 @@ class DCircularContainer extends StatelessWidget {
     return Container(
       width: width,
       height: height,
+      margin: margin,
       padding: EdgeInsets.all(padding),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(radius),

@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import '../../../utils/constants/helpers/colors.dart';
-import '../../../utils/constants/helpers/image_strings.dart';
 import '../../../utils/constants/helpers/sizes.dart';
 import '../../../utils/helpers/helper_function.dart';
 import '../Custom shapes/Containers/rounded_container.dart';
-import '../Products/Brand cards/brand_cards.dart';
+import 'brand_cards.dart';
 
 class DBrandShowCase extends StatelessWidget {
   const DBrandShowCase({
@@ -26,6 +25,7 @@ class DBrandShowCase extends StatelessWidget {
         children: [
           /// Brand with Product Count
           const DBrandCard(showBorder: false),
+          const SizedBox(height: DSizes.spaceBtwItems),
 
           /// BRand top 3 Product images
           Row(children: images.map((image) => brandTopProductImageWidget(image, context)).toList()),
@@ -43,7 +43,7 @@ class DBrandShowCase extends StatelessWidget {
         backgroundColor: DHelperFunctions.isDarkMode(context)
             ? DColors.darkerGrey
             : DColors.light,
-        child: const Image(image: AssetImage(DImages.productImage5)),
+        child: Image(fit: BoxFit.contain, image: AssetImage(image)),
       ),
     );
   }

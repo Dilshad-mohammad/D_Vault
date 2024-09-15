@@ -3,7 +3,6 @@ import 'package:untitled/features/authentication/controllers/Onboarding/onboardi
 
 import '../../../../../utils/constants/helpers/sizes.dart';
 import '../../../../../utils/device/device_utility.dart';
-import '../../Login/login.dart';
 
 class OnBoardingSkip extends StatelessWidget {
   const OnBoardingSkip({

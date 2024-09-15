@@ -24,7 +24,7 @@ class ResetPassword extends StatelessWidget {
       body: SingleChildScrollView(
         // padding to give default and equal Space on all sides in all screens.
         child: Padding(
-          padding: EdgeInsets.all(DSizes.defaultSpace),
+          padding: const EdgeInsets.all(DSizes.defaultSpace),
           child: Column(
             children: [
               /// Image with 60% of screen width

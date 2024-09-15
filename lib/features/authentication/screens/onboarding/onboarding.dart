@@ -1,17 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:iconsax_flutter/iconsax_flutter.dart';
 import 'package:untitled/features/authentication/controllers/Onboarding/onboarding_controllers.dart';
 import 'package:untitled/features/authentication/screens/onboarding/widgets/onboarding_dot_navigation.dart';
 import 'package:untitled/features/authentication/screens/onboarding/widgets/onboarding_next_button.dart';
 import 'package:untitled/features/authentication/screens/onboarding/widgets/onboarding_page.dart';
 import 'package:untitled/features/authentication/screens/onboarding/widgets/onboarding_skip.dart';
-import 'package:untitled/utils/constants/helpers/colors.dart';
 import 'package:untitled/utils/constants/helpers/image_strings.dart';
-import 'package:untitled/utils/constants/helpers/sizes.dart';
 import 'package:untitled/utils/constants/helpers/text_strings.dart';
-import 'package:untitled/utils/device/device_utility.dart';
-import 'package:untitled/utils/helpers/helper_function.dart';
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});

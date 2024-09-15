@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax_flutter/iconsax_flutter.dart';
-// import 'package:untitled/features/personalization/screens/setting/setting.dart';
-// import 'package:untitled/features/shop/screens/Wishlist/wishlist.dart';
+import 'package:untitled/features/shop/screens/Wishlist/wishlist.dart';
 import 'package:untitled/utils/constants/helpers/colors.dart';
 import 'package:untitled/utils/helpers/helper_function.dart';
+import 'features/personalization/Screens/Settings/settings.dart';
 import 'features/shop/screens/Home/home.dart';
-// import 'features/shop/screens/Store/store.dart';
+import 'features/shop/screens/Store/store.dart';
 
 class NavigationMenu extends StatelessWidget {
   const NavigationMenu({super.key});
@@ -41,5 +41,5 @@ class NavigationMenu extends StatelessWidget {
 class NavigationController extends GetxController{
   final Rx<int> selectedIndex = 0.obs;
 
-  final screens = [const HomeScreen(),/* const StoreScreen(), const FavouriteScreen(), const SettingScreen()*/];
+  final screens = [const HomeScreen(), const StoreScreen(), const WishlistScreen(), const SettingScreen()];
 }
