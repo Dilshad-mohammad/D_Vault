@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:untitled/features/authentication/screens/onboarding/onboarding.dart';
+import 'package:untitled/features/shop/screens/Home/home.dart';
 import 'utils/theme/theme.dart';
 
 
@@ -13,7 +13,7 @@ class D_vault extends StatelessWidget{
       themeMode: ThemeMode.system,
       theme: D_vaultTheme.lightTheme,
       darkTheme: D_vaultTheme.darTheme,
-      home: const OnboardingScreen(),
+      home: const HomeScreen(),
       debugShowCheckedModeBanner: false,
     );
   }

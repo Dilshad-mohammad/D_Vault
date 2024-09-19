@@ -37,7 +37,7 @@ class DVerticalImageText extends StatelessWidget {
               ),
               child: Center(
                 child: Image(
-                    image: AssetImage(image), fit: BoxFit.cover, color: /*DHelperFunctions.isDarkMode(context) ? DColors.light : */DColors.dark), /// remove constant when image added (if needed)
+                    image: AssetImage(image), fit: BoxFit.cover, color: DHelperFunctions.isDarkMode(context) ? DColors.light : DColors.dark), /// remove constant when image added (if needed)
               ),
             ),
 

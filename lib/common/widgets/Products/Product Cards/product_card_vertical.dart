@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax_flutter/iconsax_flutter.dart';
 import 'package:untitled/common/styles/shadow.dart';
 import 'package:untitled/common/widgets/Images/drounded_image.dart';
 import 'package:untitled/common/widgets/texts/product_title_text.dart';
+import 'package:untitled/features/shop/screens/Product%20details/product_details.dart';
 import 'package:untitled/utils/constants/helpers/colors.dart';
 import 'package:untitled/utils/constants/helpers/image_strings.dart';
 import 'package:untitled/utils/constants/helpers/sizes.dart';
@@ -21,7 +23,7 @@ class DProductCardVertical extends StatelessWidget {
 
     /// Container with side paddings, color, edges, radius and shadow.
     return GestureDetector(
-      onTap: () {},
+      onTap: () => Get.to(const ProductDetailScreen()),
       child: Container(
         width: 180,
         padding: const EdgeInsets.all(1),
