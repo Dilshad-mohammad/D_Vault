@@ -16,7 +16,7 @@ class DCouponCode extends StatelessWidget {
     return DRoundedContainer(
       showBorder: true,
       backgroundColor: dark ? DColors.dark : DColors.white,
-      padding: EdgeInsets.only(
+      padding: const EdgeInsets.only(
           top: DSizes.sm,
           bottom: DSizes.sm,
           right: DSizes.sm,
@@ -25,7 +25,7 @@ class DCouponCode extends StatelessWidget {
         children: [
           Flexible(
             child: TextFormField(
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 hintText: 'Have a promo code? Enter here',
                 border: InputBorder.none,
                 focusedBorder: InputBorder.none,
@@ -49,7 +49,7 @@ class DCouponCode extends StatelessWidget {
                 side:
                 BorderSide(color: DColors.grey.withOpacity(0.1)),
               ),
-              child: Text('Apply'),
+              child: const Text('Apply'),
             ),
           )
         ],

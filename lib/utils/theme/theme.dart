@@ -28,7 +28,7 @@ class D_vaultTheme {
   );
 
   // DARK THEME...
-  static ThemeData darTheme = ThemeData(
+  static ThemeData darkTheme = ThemeData(
     useMaterial3: true,
     fontFamily: 'poppins',
     brightness: Brightness.dark,

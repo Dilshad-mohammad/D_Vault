@@ -21,11 +21,11 @@ class DBillingPaymentSection extends StatelessWidget {
             DRoundedContainer(
               width: 60,
               height: 35,
-              backgroundColor: dark ? DColors.light : DColors.white,
-              padding: EdgeInsets.all(DSizes.sm),
-              child: Image(image: AssetImage(DImages.payPal), fit: BoxFit.contain),
+              backgroundColor: dark ? DColors.light : DColors.softgrey,
+              padding: const EdgeInsets.all(DSizes.sm),
+              child: const Image(image: AssetImage(DImages.payPal), fit: BoxFit.contain),
             ),
-            SizedBox(width: DSizes.spaceBtwItems / 2),
+            const SizedBox(width: DSizes.spaceBtwItems / 2),
             Text('Paypal', style: Theme.of(context).textTheme.bodyLarge),
           ],
         )

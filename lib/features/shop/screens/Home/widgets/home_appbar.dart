@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import '../../../../../common/widgets/Appbar/appbar.dart';
 import '../../../../../common/widgets/Products/Cart/cart_menu_icon.dart';
 import '../../../../../utils/constants/helpers/colors.dart';
 import '../../../../../utils/constants/helpers/text_strings.dart';
+import '../../Cart/cart.dart';
 
 class DHomeAppBar extends StatelessWidget {
   const DHomeAppBar({
@@ -13,6 +15,7 @@ class DHomeAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return DAppBar(
       title: Column(
+
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(DTexts.homeAppbarTitle,
@@ -23,7 +26,7 @@ class DHomeAppBar extends StatelessWidget {
                   .apply(color: DColors.white)),
         ],
       ),
-      actions: [DCartCounterIcon(iconColor: DColors.white, onPressed: (){ }),],
+      actions: [DCartCounterIcon(iconColor: DColors.white, onPressed: () => Get.to(const CartScreen()))],
     );
   }
 }

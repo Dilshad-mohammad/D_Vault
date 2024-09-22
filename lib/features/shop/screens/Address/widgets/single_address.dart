@@ -16,7 +16,7 @@ class DSingleAddress extends StatelessWidget {
     return DRoundedContainer(
       width: double.infinity,
       showBorder: true,
-      padding: EdgeInsets.all(DSizes.md),
+      padding: const EdgeInsets.all(DSizes.md),
       backgroundColor: selectedAddress ? DColors.primary.withOpacity(0.5) : Colors.transparent,
       borderColor: selectedAddress ? Colors.transparent : DColors.grey,
       margin: const EdgeInsets.all(DSizes.spaceBtwItems),
@@ -39,9 +39,9 @@ class DSingleAddress extends StatelessWidget {
                 style: Theme.of(context).textTheme.titleLarge,
               ),
               const SizedBox(height: DSizes.sm / 2),
-              Text('+91-35443-56452', maxLines: 1, overflow: TextOverflow.ellipsis),
+              const Text('+91-35443-56452', maxLines: 1, overflow: TextOverflow.ellipsis),
               const SizedBox(height: DSizes.sm / 2),
-              Text('Gita vatike, shahpur, Gorakhpur, 273006, INDIA', softWrap: true),
+              const Text('Gita vatike, shahpur, Gorakhpur, 273006, INDIA', softWrap: true),
             ],
           )
         ],

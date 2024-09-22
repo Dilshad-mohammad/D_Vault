@@ -28,7 +28,7 @@ class DCartItem extends StatelessWidget {
               ? DColors.darkerGrey
               : DColors.light,
         ),
-        SizedBox(width: DSizes.spaceBtwItems),
+        const SizedBox(width: DSizes.spaceBtwItems),
 
         /// Title, Price & Size
         Expanded(child: Column(
@@ -36,7 +36,7 @@ class DCartItem extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const DBrandTitleTextWithVerifiedIcon(title: 'Nike'),
-            Flexible(child: DProductTitleText(title: 'Black Sports shoes', maxLines: 1)),
+            const Flexible(child: DProductTitleText(title: 'Black Sports shoes', maxLines: 1)),
             /// Attribute
             Text.rich(
                 TextSpan(

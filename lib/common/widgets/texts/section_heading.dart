@@ -4,7 +4,7 @@ class DSectionHeading extends StatelessWidget {
   const DSectionHeading({
     super.key,
     this.textColor,
-    this.showActionButton = false,
+    this.showActionButton = true,
     required this.title,
     this.buttonTitle = 'View all',
     this.onPressed,
@@ -19,8 +19,9 @@ class DSectionHeading extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text(title, style: Theme.of(context).textTheme.headlineSmall!.apply(color: textColor), maxLines: 1, overflow: TextOverflow.ellipsis),
-        if(showActionButton) TextButton(onPressed: (){}, child: Text(buttonTitle))
+        Text(title, style: Theme.of(context).textTheme.headlineSmall!.apply(color: textColor),
+            maxLines: 1, overflow: TextOverflow.ellipsis),
+        if(showActionButton) TextButton(onPressed: onPressed, child: Text(buttonTitle))
       ],
     );
   }

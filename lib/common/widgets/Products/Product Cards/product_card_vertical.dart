@@ -42,10 +42,9 @@ class DProductCardVertical extends StatelessWidget {
               child: Stack(
                 children: [
                   /// -- Thumbnail Image
-                  ///
                   const DRoundedImage(
                       imageUrl: DImages.productImage38, applyImageRadius: true,
-                      padding: EdgeInsets.only(top: 18)),
+                      padding: EdgeInsets.only(top: 16)),
       
                   /// -- Sale Tag
                   Positioned(

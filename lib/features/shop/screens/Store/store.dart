@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:untitled/common/widgets/Appbar/appbar.dart';
 import 'package:untitled/common/widgets/Custom%20shapes/Containers/search_container.dart';
 import 'package:untitled/common/widgets/Layout/grid_layout.dart';
@@ -10,6 +11,7 @@ import 'package:untitled/utils/constants/helpers/sizes.dart';
 import '../../../../common/widgets/Appbar/tabbar.dart';
 import '../../../../common/widgets/Brands/brand_cards.dart';
 import '../../../../utils/helpers/helper_function.dart';
+import '../Cart/cart.dart';
 
 class StoreScreen extends StatelessWidget {
   const StoreScreen({super.key});
@@ -18,13 +20,13 @@ class StoreScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = DHelperFunctions.isDarkMode(context);
     return DefaultTabController(
-      length: 4,
+      length: 5,
       child: Scaffold(
         appBar: DAppBar(
           title:
               Text('Store', style: Theme.of(context).textTheme.headlineMedium),
           actions: [
-            DCartCounterIcon(onPressed: () {}),
+            DCartCounterIcon(onPressed: () => Get.to(const CartScreen())),
           ],
         ),
         body: NestedScrollView(
@@ -69,7 +71,6 @@ class StoreScreen extends StatelessWidget {
 
                 /// Tabs
                 bottom: const DTabBar(
-
                   tabs: [
                     Tab(child: Text('Sports')),
                     Tab(child: Text('Furniture')),

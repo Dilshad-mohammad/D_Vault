@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:untitled/common/widgets/Appbar/appbar.dart';
 import 'package:untitled/features/shop/screens/Cart/Widgets/cart_items.dart';
 import 'package:untitled/features/shop/screens/Checkout/Checkout.dart';

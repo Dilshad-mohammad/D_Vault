@@ -22,7 +22,7 @@ class DCategoryTab extends StatelessWidget {
             children: [
               /// -- Brands
               const DBrandShowCase(images: [
-                DImages.productImage5, DImages.productImage40, DImages.productImage40]),
+                DImages.productImage5, DImages.productImage40, DImages.productImage50]),
               const SizedBox(height: DSizes.spaceBtwItems),
 
               /// -- Products

@@ -20,58 +20,83 @@ class UserReviewCard extends StatelessWidget {
           children: [
             Row(
               children: [
-                CircleAvatar(backgroundImage: AssetImage(DImages.userProfileImage1)),
-                SizedBox(width: DSizes.spaceBtwItems),
-                Text('Anshi Gupta', style: Theme.of(context).textTheme.titleLarge),
+                const CircleAvatar(
+                    backgroundImage: AssetImage(DImages.userProfileImage1)),
+                const SizedBox(width: DSizes.spaceBtwItems),
+                Text('Anshi Gupta',
+                    style: Theme.of(context).textTheme.titleLarge),
               ],
             ),
-            IconButton(onPressed: (){}, icon: Icon(Icons.more_vert)),
+            IconButton(onPressed: () {}, icon: const Icon(Icons.more_vert)),
           ],
         ),
         Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            DRatingBarIndicator(rating: 4),
-            SizedBox(width: DSizes.spaceBtwItems),
+            const DRatingBarIndicator(rating: 4),
+            const SizedBox(width: DSizes.spaceBtwItems),
             Text('28 Aug 2024', style: Theme.of(context).textTheme.bodyMedium),
           ],
         ),
-        SizedBox(height: DSizes.spaceBtwItems),
-        ReadMoreText(
+        const SizedBox(height: DSizes.spaceBtwItems),
+        const ReadMoreText(
           'The user Interface of the app is Quite intuitive. I was able to navigate and make purchase seamlessly. Great job!',
           trimLines: 2,
           trimMode: TrimMode.Line,
           trimExpandedText: ' Show less',
           trimCollapsedText: ' Show more',
-          moreStyle: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: DColors.primary),
-          lessStyle: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: DColors.primary),
+          moreStyle: TextStyle(
+              fontSize: 14,
+              fontWeight: FontWeight.bold,
+              color: DColors.primary),
+          lessStyle: TextStyle(
+              fontSize: 14,
+              fontWeight: FontWeight.bold,
+              color: DColors.primary),
         ),
         const SizedBox(height: DSizes.spaceBtwItems),
 
         /// Company Private
         DRoundedContainer(
           backgroundColor: dark ? DColors.darkerGrey : DColors.grey,
-          child: Padding(padding: EdgeInsets.all(DSizes.md),
-          child: Column(
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text("D'Store", style: Theme.of(context).textTheme.titleMedium),
-                  Text('29 Aug 2024', style: Theme.of(context).textTheme.bodyMedium),
-                ],
-              ),
-              SizedBox(height: DSizes.spaceBtwItems),
-              ReadMoreText(
-                'The user Interface of the app is Quite intuitive. I was able to navigate and make purchase seamlessly. Great job!',
-                trimLines: 2,
-                trimMode: TrimMode.Line,
-                trimExpandedText: ' Show less',
-                trimCollapsedText: ' Show more',
-                moreStyle: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: DColors.primary),
-                lessStyle: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: DColors.primary),
-              ),
-            ],
-          ),
+          child: Padding(
+            padding: const EdgeInsets.all(DSizes.md),
+            child: Column(
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text("D'Store",
+                        style: Theme.of(context).textTheme.titleMedium),
+                    Text('29 Aug 2024',
+                        style: Theme.of(context).textTheme.bodyMedium),
+                  ],
+                ),
+                const SizedBox(height: DSizes.spaceBtwItems),
+                const ReadMoreText(
+                  trimLines: 2,
+                  trimMode: TrimMode.Line,
+                  trimExpandedText: ' Show less',
+                  trimCollapsedText: ' Show more',
+                  moreStyle: TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold,
+                      color: DColors.primary),
+                  lessStyle: TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold,
+                      color: DColors.primary),
+                  '''Dear Anshi Gupta,
+Thank you so much for your kind words and positive feedback! We are thrilled to hear that you had a great experience with our service. Your satisfaction is our top priority, and it’s wonderful to know that we met your expectations.
+We truly appreciate you taking the time to share your experience with us. Your feedback motivates us to continue delivering the best possible service to our valued customers like you.
+If you have any further questions or need assistance, please don’t hesitate to reach out. We look forward to serving you again soon!
+
+Warm regards, 
+D_Vault
+''',
+                ),
+              ],
+            ),
           ),
         ),
         const SizedBox(height: DSizes.spaceBtwSections),

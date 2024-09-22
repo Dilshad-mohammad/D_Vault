@@ -22,20 +22,20 @@ class DProductQtyAddRemoveButton extends StatelessWidget {
           width: 32,
           height: 32,
           size: DSizes.md,
-          color: dark ? DColors.white : DColors.black,
-          backgroundColor : dark ? DColors.darkGrey : DColors.light,
+          color: dark ? Colors.white : DColors.black,
+          backgroundColor : dark ? DColors.darkGrey : DColors.softgrey,
         ),
-        SizedBox( width: DSizes.spaceBtwItems),
+        const SizedBox( width: DSizes.spaceBtwItems),
         Text('2', style: Theme.of(context).textTheme.titleSmall),
-        SizedBox( width: DSizes.spaceBtwItems),
+        const SizedBox( width: DSizes.spaceBtwItems),
 
-        const DCircularIcon(
+        DCircularIcon(
           icon: Iconsax.add_copy,
           width: 32,
           height: 32,
           size: DSizes.md,
-          color: DColors.white,
-          backgroundColor : DColors.primary,
+          color: dark ? DColors.white : DColors.black,
+          backgroundColor : dark ? DColors.darkGrey : DColors.softgrey,
         ),
       ],
     );

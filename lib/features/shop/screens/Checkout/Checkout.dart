@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:untitled/common/widgets/Custom%20shapes/Containers/rounded_container.dart';
 import 'package:untitled/common/widgets/success%20screen/succes_screen.dart';
 import 'package:untitled/features/shop/screens/Cart/Widgets/cart_items.dart';
@@ -26,26 +25,26 @@ class CheckoutScreen extends StatelessWidget {
       appBar: DAppBar(
           showBackArrow: true,
           title:
-              Text('Cart', style: Theme.of(context).textTheme.headlineSmall)),
+              Text('Order Review', style: Theme.of(context).textTheme.headlineSmall)),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(DSizes.defaultSpace),
+          padding: const EdgeInsets.all(DSizes.defaultSpace),
           child: Column(
             children: [
               /// -- Items in Cart
-              DCartItems(showAddRemoveButton: false),
-              SizedBox(height: DSizes.spaceBtwSections),
+              const DCartItems(showAddRemoveButton: false),
+              const SizedBox(height: DSizes.spaceBtwSections),
 
               /// -- Coupon TextField
-              DCouponCode(),
-              SizedBox(height: DSizes.spaceBtwSections),
+              const DCouponCode(),
+              const SizedBox(height: DSizes.spaceBtwSections),
 
               /// -- Billing Section
               DRoundedContainer(
                 showBorder: true,
-                padding: EdgeInsets.all(DSizes.md),
+                padding: const EdgeInsets.all(DSizes.md),
                 backgroundColor: dark ? DColors.black : DColors.white,
-                child: Column(
+                child: const Column(
                   children: [
                     /// Pricing
                     DBillingAmountSection(),

@@ -49,14 +49,14 @@ class DProductImageSlider extends StatelessWidget {
                       width: 80,
                       backgroundColor: dark ? DColors.dark : DColors.white,
                       border: Border.all(color: DColors.primary),
-                      padding: EdgeInsets.all(DSizes.sm),
+                      padding: const EdgeInsets.all(DSizes.sm),
                       imageUrl: DImages.productImage39),
                 ),
               ),
             ),
 
             /// Appbar Icons
-            DAppBar(
+            const DAppBar(
               showBackArrow: true,
               actions: [
                 DCircularIcon(icon: Iconsax.heart, color: Colors.red)],

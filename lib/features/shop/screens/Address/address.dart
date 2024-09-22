@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax_flutter/iconsax_flutter.dart';
 import 'package:untitled/common/widgets/Appbar/appbar.dart';
 import 'package:untitled/features/shop/screens/Address/add_new_address.dart';
@@ -17,13 +16,13 @@ class UserAddressScreen extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         onPressed: () => Get.to(const AddNewAddressScreen()),
         backgroundColor: DColors.primary,
-        child: Icon(Iconsax.add_copy, color: DColors.white),
+        child: const Icon(Iconsax.add_copy, color: DColors.white),
       ),
       appBar: DAppBar(
         showBackArrow: true,
         title: Text('Addresses', style: Theme.of(context).textTheme.headlineSmall),
       ),
-      body: SingleChildScrollView(
+      body: const SingleChildScrollView(
         child: Padding(padding: EdgeInsets.all(DSizes.defaultSpace),
         child: Column(
           children: [

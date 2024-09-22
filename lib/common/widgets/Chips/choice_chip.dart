@@ -29,11 +29,11 @@ class DChoiceChip extends StatelessWidget {
         onSelected: onSelected,
         labelStyle: TextStyle(color: selected ? DColors.white : null),
         avatar: isColor ? DCircularContainer(width: 50, height: 50, backgroundColor: DHelperFunctions.getColor(text)!) : null,
-        labelPadding: isColor ? EdgeInsets.all(0) : null,
+        labelPadding: isColor ? const EdgeInsets.all(0) : null,
         // Make icon in the center
-        shape: isColor ? CircleBorder() : null,
+        shape: isColor ? const CircleBorder() : null,
         backgroundColor: isColor ? DHelperFunctions.getColor(text)! : null,
-        padding: isColor ? EdgeInsets.all(0) : null,
+        padding: isColor ? const EdgeInsets.all(0) : null,
       ),
     );
   }

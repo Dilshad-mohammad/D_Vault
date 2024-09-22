@@ -19,21 +19,21 @@ class DProductAttributes extends StatelessWidget {
       children: [
         /// -- Selected Attributes Pricing & Description
         DRoundedContainer(
-          padding: EdgeInsets.all(DSizes.md),
+          padding: const EdgeInsets.all(DSizes.md),
           backgroundColor: dark ? DColors.darkerGrey : DColors.grey,
           child: Column(
             children: [
               /// Title, Price and Stock Status
               Row(
                 children: [
-                  DSectionHeading(title: 'Variation', showActionButton: false),
-                  SizedBox(width: DSizes.spaceBtwItems),
+                  const DSectionHeading(title: 'Variation', showActionButton: false),
+                  const SizedBox(width: DSizes.spaceBtwItems),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Row(
                         children: [
-                          DProductTitleText(title: 'Price : ', smallSize: true),
+                          const DProductTitleText(title: 'Price : ', smallSize: true),
 
                           /// Actual Price
                           Text(
@@ -50,7 +50,7 @@ class DProductAttributes extends StatelessWidget {
                       /// Stock
                       Row(
                         children: [
-                          DProductTitleText(title: 'Stock : ', smallSize: true),
+                          const DProductTitleText(title: 'Stock : ', smallSize: true),
                           Text('In Stock', style: Theme.of(context).textTheme.titleMedium),
                         ],
                       )
@@ -68,14 +68,14 @@ class DProductAttributes extends StatelessWidget {
             ],
           ),
         ),
-        const SizedBox(width: DSizes.spaceBtwItems),
+        const SizedBox(height: DSizes.spaceBtwItems),
 
         /// -- Attributes
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            DSectionHeading(title: 'Colors'),
-            SizedBox(width: DSizes.spaceBtwItems / 2),
+            const DSectionHeading(title: 'Colors'),
+            const SizedBox(width: DSizes.spaceBtwItems / 2),
             Wrap(
               spacing: 8,
               children: [
@@ -86,11 +86,12 @@ class DProductAttributes extends StatelessWidget {
             )
           ],
         ),
+        const SizedBox(height: DSizes.spaceBtwItems / 2),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            DSectionHeading(title: 'Size'),
-            SizedBox(width: DSizes.spaceBtwItems / 2),
+            const DSectionHeading(title: 'Size'),
+            const SizedBox(width: DSizes.spaceBtwItems / 2),
             Wrap(
               spacing: 8,
               children: [

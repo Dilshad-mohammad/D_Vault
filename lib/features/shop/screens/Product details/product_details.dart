@@ -24,31 +24,32 @@ class ProductDetailScreen extends StatelessWidget {
         child: Column(
           children: [
             /// 1 - Product Image Slider
-            DProductImageSlider(),
+            const DProductImageSlider(),
 
             /// 2 - Product Details
-            Padding(padding: EdgeInsets.only(right: DSizes.defaultSpace, left: DSizes.defaultSpace, bottom: DSizes.defaultSpace),
+            Padding(padding: const EdgeInsets.only(right: DSizes.defaultSpace, left: DSizes.defaultSpace, bottom: DSizes.defaultSpace),
             child: Column(
               children: [
                 /// - Rating & Share
-                DRatingAndShare(),
+                const DRatingAndShare(),
 
 
                 /// - Price, Title, Stock & Brand
-                DProductMetaData(),
+                const DProductMetaData(),
+                const SizedBox(height: DSizes.spaceBtwItems / 2.5),
 
                 /// -- Attributes
-                DProductAttributes(),
-                const SizedBox(width: DSizes.spaceBtwSections),
+                const DProductAttributes(),
+                const SizedBox(height: DSizes.spaceBtwSections),
 
                 /// -- Checkout Button
-                SizedBox(width: double.infinity, child: ElevatedButton(onPressed: (){}, child: Text('Checkout'))),
-                const SizedBox(width: DSizes.spaceBtwSections),
+                SizedBox(width: double.infinity, child: ElevatedButton(onPressed: (){}, child: const Text('Checkout'))),
+                const SizedBox(height: DSizes.spaceBtwSections),
 
                 /// -- Description
-                DSectionHeading(title: 'Description', showActionButton: false),
-                const SizedBox(width: DSizes.spaceBtwItems),
-                ReadMoreText(
+                const DSectionHeading(title: 'Description', showActionButton: false),
+                const SizedBox(height: DSizes.spaceBtwItems),
+                const ReadMoreText(
                   'This is Product description for blue Nke Sleeve less vest. There are more things that can be added but i am dshfdscsdvb',
                   trimLines: 2,
                   trimMode: TrimMode.Line,
@@ -59,16 +60,16 @@ class ProductDetailScreen extends StatelessWidget {
                 ),
 
                 /// -- Reviews
-                Divider(),
-                SizedBox(height: DSizes.spaceBtwItems),
+                const Divider(),
+                const SizedBox(height: DSizes.spaceBtwItems),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    DSectionHeading(title: 'Review (199)', showActionButton: false),
-                    IconButton(onPressed: () => Get.to(const ProductReviewsScreen()), icon: Icon(Iconsax.arrow_right_3_copy, size: 18))
+                    const DSectionHeading(title: 'Review (199)', showActionButton: false),
+                    IconButton(onPressed: () => Get.to(const ProductReviewsScreen()), icon: const Icon(Iconsax.arrow_right_3_copy, size: 18))
                   ],
                 ),
-                SizedBox(height: DSizes.spaceBtwSections),
+                const SizedBox(height: DSizes.spaceBtwSections),
               ],
             ),
             )

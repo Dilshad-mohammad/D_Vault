@@ -40,19 +40,19 @@ class DProductMetaData extends StatelessWidget {
             /// Price
             Text('\$350', style: Theme.of(context).textTheme.titleSmall!.apply(decoration: TextDecoration.lineThrough)),
             const SizedBox(width: DSizes.spaceBtwItems),
-            DProductPriceText(price: '230', isLarge: true),
+            const DProductPriceText(price: '230', isLarge: true),
           ],
         ),
         const SizedBox(height: DSizes.spaceBtwItems / 1.5),
 
         /// Title
-        DProductTitleText(title: 'Brown Nike Sporty Leather Jacket'),
+        const DProductTitleText(title: 'Brown Nike Sporty Leather Jacket'),
         const SizedBox(height: DSizes.spaceBtwItems / 1.5),
 
         /// Stock Status
         Row(
           children: [
-            DProductTitleText(title: 'Status'),
+            const DProductTitleText(title: 'Status'),
             const SizedBox(width: DSizes.spaceBtwItems),
             Text('In Stock', style: Theme.of(context).textTheme.titleMedium),
           ],
@@ -67,7 +67,7 @@ class DProductMetaData extends StatelessWidget {
               height: 35,
               overlayColor: dark ? DColors.white : DColors.dark,
             ),
-            DBrandTitleTextWithVerifiedIcon(title: 'Nike', brandTextSize: TextSizes.medium),
+            const DBrandTitleTextWithVerifiedIcon(title: 'Nike', brandTextSize: TextSizes.medium),
           ],
         ),
         const SizedBox(width: DSizes.spaceBtwItems),
