@@ -35,7 +35,7 @@ class DProductQtyAddRemoveButton extends StatelessWidget {
           height: 32,
           size: DSizes.md,
           color: dark ? DColors.white : DColors.black,
-          backgroundColor : dark ? DColors.darkGrey : DColors.softgrey,
+          backgroundColor : DColors.primary,
         ),
       ],
     );

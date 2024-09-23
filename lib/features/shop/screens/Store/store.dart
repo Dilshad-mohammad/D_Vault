@@ -5,6 +5,7 @@ import 'package:untitled/common/widgets/Custom%20shapes/Containers/search_contai
 import 'package:untitled/common/widgets/Layout/grid_layout.dart';
 import 'package:untitled/common/widgets/Products/Cart/cart_menu_icon.dart';
 import 'package:untitled/common/widgets/texts/section_heading.dart';
+import 'package:untitled/features/shop/screens/Brands/all_brands.dart';
 import 'package:untitled/features/shop/screens/Store/widgets/category_tab.dart';
 import 'package:untitled/utils/constants/helpers/colors.dart';
 import 'package:untitled/utils/constants/helpers/sizes.dart';
@@ -54,8 +55,8 @@ class StoreScreen extends StatelessWidget {
                       const SizedBox(height: DSizes.spaceBtwSections),
 
                       /// -- Featured Brands
-                      DSectionHeading(
-                          title: 'Featured Brands', onPressed: () {}),
+
+                      DSectionHeading(title: 'Featured Brands', onPressed: ()=> Get.to(const AllBrandsScreen())),
                       const SizedBox(height: DSizes.spaceBtwItems / 1.5),
 
                       /// -- Brand GRID

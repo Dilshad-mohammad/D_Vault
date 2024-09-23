@@ -15,22 +15,25 @@ class AllBrandsScreen extends StatelessWidget {
     return Scaffold(
       appBar: const DAppBar(title: Text('Brand'), showBackArrow: true),
       body: SingleChildScrollView(
-        child: Column(
-          children: [
-            /// Heading
-            const DSectionHeading(title: 'Brands', showActionButton: false),
-            const SizedBox(height: DSizes.spaceBtwItems),
+        child: Padding(
+          padding: const EdgeInsets.all(DSizes.defaultSpace),
+          child: Column(
+            children: [
+              /// Heading
+              const DSectionHeading(title: 'Brands', showActionButton: false),
+              const SizedBox(height: DSizes.spaceBtwItems),
 
-            /// -- Brands
-            DGridLayout(
-              itemCount: 10,
-              mainAxisExtent: 70,
-              itemBuilder: (context, index) => DBrandCard(
-                showBorder: true,
-                onTap: () => Get.to(const BrandProductsScreen()),
+              /// -- Brands
+              DGridLayout(
+                itemCount: 10,
+                mainAxisExtent: 70,
+                itemBuilder: (context, index) => DBrandCard(
+                  showBorder: true,
+                  onTap: () => Get.to(const BrandProductsScreen()),
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
