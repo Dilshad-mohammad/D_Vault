@@ -24,7 +24,7 @@ class DSingleAddress extends StatelessWidget {
         children: [
           Positioned(
             right: 5,
-            top: 0,
+            top: 30,
             child: Icon(selectedAddress ? Iconsax.tick_circle_copy : null,
               color: selectedAddress ? dark ? DColors.light : DColors.dark.withOpacity(0.2) : null,
             ),
