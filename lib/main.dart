@@ -10,5 +10,5 @@ void main(){
   //Todo: Initialize Firebase
   //Todo: Initialize Authentication
 
-  runApp(const D_vault());
+  runApp(const d_vault());
 }

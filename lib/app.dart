@@ -4,8 +4,8 @@ import 'features/authentication/screens/onboarding/onboarding.dart';
 import 'utils/theme/theme.dart';
 
 
-class D_vault extends StatelessWidget{
-  const D_vault({super.key});
+class d_vault extends StatelessWidget{
+  const d_vault({super.key});
 
   @override
   Widget build(BuildContext context) {

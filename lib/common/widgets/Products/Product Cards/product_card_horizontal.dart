@@ -36,15 +36,16 @@ class DProductCardHorizontal extends StatelessWidget {
               children: [
                 /// -- Thumbnail Image
                 const SizedBox(
-                  height: 120,
+                  height: 140,
                   width: 120,
                   child: DRoundedImage(
+                    padding: EdgeInsets.only(top: 10),
                       imageUrl: DImages.productImage38, applyImageRadius: true),
                 ),
 
                 /// -- Sale Tag
                 Positioned(
-                  top: 12,
+                  top: 10,
                   child: DRoundedContainer(
                     radius: DSizes.sm,
                     backgroundColor: DColors.secondary.withOpacity(0.8),
@@ -63,7 +64,7 @@ class DProductCardHorizontal extends StatelessWidget {
                     top: 0,
                     right: 0,
                     child:
-                    DCircularIcon(icon: Iconsax.heart, color: Colors.red)),
+                    DCircularIcon(icon: Iconsax.heart, color: Colors.red,height: 40,width: 40,size: DSizes.md * 1.3,)),
               ],
             ),
           ),
