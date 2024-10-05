@@ -33,26 +33,35 @@ class HomeScreen extends StatelessWidget {
                   /// -- SearchBar
                   DSearchContainer(
                     text: 'Search in Store',
-                    padding: EdgeInsets.symmetric(horizontal: DSizes.defaultSpace),
+                    padding:
+                        EdgeInsets.symmetric(horizontal: DSizes.defaultSpace),
                   ),
                   SizedBox(height: DSizes.spaceBtwSections),
 
                   /// Categories
-                  Padding(
-                    padding: EdgeInsets.only(left: DSizes.defaultSpace),
-                    child: Column(
-                      children: [
-                        /// Heading
-                        DSectionHeading(
-                            title: 'Popular Categories',
-                            showActionButton: false,
-                            textColor: DColors.white),
-                        SizedBox(height: DSizes.spaceBtwItems),
+                  Column(
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.only(),
+                        child: Column(
+                          children: [
+                            /// Heading
+                            Padding(
+                              padding:
+                                  EdgeInsets.only(left: DSizes.defaultSpace),
+                              child: DSectionHeading(
+                                  title: 'Popular Categories',
+                                  showActionButton: false,
+                                  textColor: DColors.white),
+                            ),
+                            SizedBox(height: DSizes.spaceBtwItems),
 
-                        /// Categories
-                        DHomeCategories(),
-                      ],
-                    ),
+                            /// Categories
+                            DHomeCategories(),
+                          ],
+                        ),
+                      ),
+                    ],
                   ),
                   SizedBox(height: DSizes.spaceBtwSections),
                 ],
